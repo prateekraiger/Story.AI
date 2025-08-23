@@ -10,6 +10,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
+        <div className="background-gradient"></div>
         <Navbar />
         <header className="fade-in">
           <h1>AI Story Forge</h1>
