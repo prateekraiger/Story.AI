@@ -544,3 +544,65 @@ header h1 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-accent);
 }
+
+/* Story Generator */
+.story-generator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.story-generator {
+    width: 100%;
+    max-width: 600px;
+}
+
+.theme-input-container {
+    text-align: center;
+}
+
+.story-generator-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.story-generator-instructions {
+    font-size: 1.125rem;
+    color: var(--secondary-text);
+    margin-bottom: 2.5rem;
+}
+
+.error-container {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: var(--primary-text);
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.error-text {
+    margin-bottom: 1.5rem;
+    color: var(--secondary-text);
+}
+
+.try-again-button {
+    background: var(--danger-accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.try-again-button:hover {
+    background: #dc2626;
+}

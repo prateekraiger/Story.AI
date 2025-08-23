@@ -87,16 +87,30 @@ function StoryGenerator() {
         setLoading(false)
     }
 
-    return <div className="story-generator">
-        {error && <div className="error-message">
-            <p>{error}</p>
-            <button onClick={reset}>Try Again</button>
-        </div>}
+    return (
+        <div className="story-generator-container">
+            <div className="story-generator">
+                {error && (
+                    <div className="error-container">
+                        <p className="error-text">{error}</p>
+                        <button className="try-again-button" onClick={reset}>Try Again</button>
+                    </div>
+                )}
 
-        {!jobId && !error && !loading && <ThemeInput onSubmit={generateStory}/>}
+                {!jobId && !error && !loading && (
+                    <div className="theme-input-container">
+                        <h2 className="story-generator-title">Create Your Own Adventure</h2>
+                        <p className="story-generator-instructions">
+                            Enter a theme for your story, and let the AI weave a tale for you.
+                        </p>
+                        <ThemeInput onSubmit={generateStory} />
+                    </div>
+                )}
 
-        {loading && <LoadingStatus theme={theme} />}
-    </div>
+                {loading && <LoadingStatus theme={theme} />}
+            </div>
+        </div>
+    );
 }
 
 export default StoryGenerator
