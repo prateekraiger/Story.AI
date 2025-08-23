@@ -1,7 +1,7 @@
 import {useState} from "react"
 
 function ThemeInput({onSubmit}) {
-    const [theme, setTheme]= useState("");
+    const [theme, setTheme] = useState("");
     const [error, setError] = useState("")
 
     const handleSubmit = (e) => {
@@ -12,29 +12,62 @@ function ThemeInput({onSubmit}) {
             return
         }
 
+        setError("")
         onSubmit(theme);
     }
 
-    return <div className="theme-input-container">
-        <h2>Generate Your Adventure</h2>
-        <p>Enter a theme for your interactive story</p>
+    const handleExampleClick = (exampleTheme) => {
+        setTheme(exampleTheme)
+        setError("")
+    }
 
-        <form onSubmit={handleSubmit}>
-            <div className="input-group">
-                <input
-                    type="text"
-                    value={theme}
-                    onChange={(e) => setTheme(e.target.value)}
-                    placeholder="Enter a theme (e.g. prirates, space, medieval...)"
-                    className={error ? 'error' : ''}
-                />
-                {error && <p className="error-text">{error}</p>}
+    const examples = [
+        "Fantasy Adventure", "Space Exploration", "Medieval Quest", "Pirate's Journey",
+        "Mystery Detective", "Horror Mansion", "Cyberpunk Future", "Wild West",
+        "Underwater City", "Time Travel", "Zombie Apocalypse", "Magical School"
+    ]
+
+    return (
+        <div className="modern-card fade-in">
+            <div className="theme-input-container">
+                <h2>Generate Your Adventure</h2>
+                <p>Enter a theme for your interactive story and let AI create an immersive experience</p>
+
+                <form onSubmit={handleSubmit}>
+                    <div className="input-group">
+                        <label htmlFor="theme-input">Story Theme</label>
+                        <input
+                            id="theme-input"
+                            type="text"
+                            value={theme}
+                            onChange={(e) => setTheme(e.target.value)}
+                            placeholder="Enter your story theme (e.g., pirates, space, medieval...)"
+                            className={`input-field ${error ? 'error' : ''}`}
+                        />
+                        {error && <p className="error-text">{error}</p>}
+                    </div>
+                    <button type="submit" className='btn btn-primary btn-lg'>
+                        ✨ Generate Story
+                    </button>
+                </form>
+
+                <div className="examples">
+                    <h3>Popular Themes</h3>
+                    <div className="examples-grid">
+                        {examples.map((example, index) => (
+                            <div
+                                key={index}
+                                className="example-tag"
+                                onClick={() => handleExampleClick(example)}
+                            >
+                                {example}
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
-            <button type="submit" className='generate-btn'>
-                Generate Story
-            </button>
-        </form>
-    </div>
+        </div>
+    )
 }
 
 export default ThemeInput;

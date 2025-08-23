@@ -1,0 +1,6 @@
+2025-08-23 03:35:21,745 INFO RPC interface 'supervisor' initialized
+2025-08-23 03:35:21,745 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2025-08-23 03:35:21,748 INFO daemonizing the supervisord process
+2025-08-23 03:35:21,750 INFO supervisord started with pid 1237
+2025-08-23 03:35:22,754 INFO spawned: 'story_api' with pid 1239
+2025-08-23 03:35:24,013 INFO success: story_api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
