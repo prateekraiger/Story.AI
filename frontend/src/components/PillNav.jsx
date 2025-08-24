@@ -476,4 +476,3 @@ const PillNav = ({
 };
 
 export default PillNav;
-
