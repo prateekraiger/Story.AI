@@ -12,11 +12,7 @@ An interactive story generator powered by Google's Gemini AI, featuring a modern
 - **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
 - **⚡ Fast Performance**: Optimized with daemon services for production-ready deployment
 
-## 🚀 Live Demo
 
-- **Frontend**: https://3000-iv09maw8aqewc1yxnhkel-6532622b.e2b.dev
-- **Backend API**: https://8000-iv09maw8aqewc1yxnhkel-6532622b.e2b.dev
-- **API Documentation**: https://8000-iv09maw8aqewc1yxnhkel-6532622b.e2b.dev/docs
 
 ## 🛠️ Technology Stack
 
