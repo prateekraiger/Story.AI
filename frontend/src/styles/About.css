@@ -41,7 +41,7 @@
   padding: 2rem;
   border-radius: var(--border-radius);
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
 }
 
@@ -93,7 +93,7 @@
   padding: 1.5rem;
   background: var(--secondary-bg);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .step-number {
@@ -106,7 +106,7 @@
   justify-content: center;
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: black;
   flex-shrink: 0;
 }
 
@@ -146,7 +146,7 @@
   padding: 1.5rem;
   background: var(--secondary-bg);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -167,7 +167,7 @@
   padding: 3rem 0;
   background: var(--secondary-bg);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .cta-section h2 {
