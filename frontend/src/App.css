@@ -613,10 +613,3 @@ header h1 {
     background: #333333;
 }
 
-.custom-nav {
-  background-color: var(--secondary-bg);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: var(--border-radius-lg);
-  padding: 0.5rem;
-  box-shadow: var(--box-shadow);
-}
