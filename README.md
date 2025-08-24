@@ -9,7 +9,7 @@ An interactive story generator powered by Google's Gemini AI, featuring a modern
 - **📚 Multiple Pages**: Home, Gallery, and About pages for complete experience  
 - **🔄 Interactive Choices**: Choose your own adventure with branching storylines
 - **💫 Real-time Generation**: Create stories instantly with AI assistance
-- **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
+   - **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
 - **⚡ Fast Performance**: Optimized with daemon services for production-ready deployment
 
 
@@ -102,39 +102,6 @@ webapp/
    npx pm2 status
    ```
 
-## 🎯 Usage
-
-1. **Create Stories**: Enter a theme on the home page to generate a new interactive story
-2. **Make Choices**: Click on options to progress through your adventure
-3. **Explore Endings**: Discover multiple endings based on your decisions
-4. **Browse Gallery**: View previously created stories (demo data)
-5. **Learn More**: Check the About page for detailed information
-
-## 🎨 Design Features
-
-- **Dark Theme**: Modern dark UI with blue and green accent colors
-- **Smooth Animations**: Fade-in effects and hover transitions
-- **Responsive Layout**: Adapts to all screen sizes
-- **Modern Typography**: Clean, readable font hierarchy
-- **Interactive Elements**: Hover effects and visual feedback
-- **Loading States**: Beautiful loading animations during story generation
-
-## 🔥 Recent Improvements
-
-### Backend Enhancements
-- ✅ Fixed Gemini API integration with robust error handling
-- ✅ Added comprehensive environment configuration
-- ✅ Implemented fallback story generation for reliability
-- ✅ Updated to latest dependency versions
-- ✅ Added production-ready supervisor daemon management
-
-### Frontend Overhaul
-- ✅ Complete redesign with modern dark theme
-- ✅ Added navigation with About and Gallery pages  
-- ✅ Improved component architecture and styling
-- ✅ Enhanced user experience with animations
-- ✅ Added PM2 process management for development
-- ✅ Responsive design for all devices
 
 ## 🐛 Troubleshooting
 
@@ -165,13 +132,5 @@ Default ports are:
 
 This project is open source and available under the MIT License.
 
-## 🎉 Acknowledgments
 
-- Google Gemini AI for powerful language generation
-- FastAPI team for excellent documentation
-- React community for modern frontend patterns
-- Contributors and testers for valuable feedback
 
----
-
-Made with ❤️ by the AI Story Forge team
